@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import MovieCard from "../components/MovieCard";
 const moviesURL = import.meta.env.VITE_API;
 const apiKey = import.meta.env.VITE_API_KEY;
 
-const Home = () => {
+export default function Home(){
   const [topMovies, setTopMovies] = useState([]);
 
   const getTopRatedMovies = async (url) => {
@@ -28,6 +29,4 @@ const Home = () => {
       </div>
     </div>
   );
-};
-
-export default Home;
+}
