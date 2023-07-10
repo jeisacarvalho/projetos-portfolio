@@ -15,7 +15,7 @@ const Navbar = () => {
 
     if (!search) return;
 
-    navigate(`/search?q=${search}`, { replace: true });
+    navigate(`/search?q=${search}`);
     setSearch("");
   };
 
